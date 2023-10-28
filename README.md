@@ -35,13 +35,32 @@ This CRM (Customer Relationship Management) is a company management tool that al
 2. Navigate to the project directory:  `cd TerseaCRM`
 3. Copy the `.env.example` file as `.env` and configure it with your database information: `cp .env.example .env`
 
-4. Generate a Laravel application key: `php artisan key:generate`
-5. Run migrations to create the database tables: `php artisan migrate`
-6. Run seeders to populate the database with initial data: `php artisan db:seed`
+
+4. **SMTP Configuration**: Open the `.env` file in the project root directory and configure the SMTP settings. Replace the placeholders with your email provider's SMTP details. For example:
+
+    ```ini
+    MAIL_MAILER=smtp
+    MAIL_HOST=your-smtp-host.com
+    MAIL_PORT=587
+    MAIL_USERNAME=your-email@example.com
+    MAIL_PASSWORD=your-email-password
+    MAIL_ENCRYPTION=tls
+    ```
+
+    Ensure you replace `your-smtp-host.com`, `your-email@example.com`, and `your-email-password` with your actual SMTP details.
+
+ **Generate App Password**: If your email provider requires it, generate an "App Password" for your application. This app password is used for secure email sending. Follow your email provider's instructions to generate this password.
+
+
+With the SMTP settings properly configured, your CRM can send email notifications and invitations.
+
+5. Generate a Laravel application key: `php artisan key:generate`
+6. Run migrations to create the database tables: `php artisan migrate`
+7. Run seeders to populate the database with initial data: `php artisan db:seed`
 
 This will add companies, users, employees, invitations, and more to your database for a quick start.
 
-7. Serve the application using the artisan command: `php artisan serve`
+8. Serve the application using the artisan command: `php artisan serve`
 
 Your application will be accessible at `http://localhost:8000`.
 
