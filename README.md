@@ -1,64 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# CRM - Company Management
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Description
+This CRM (Customer Relationship Management) is a company management tool that allows you to manage companies, employees, invitations, and administrators.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Administrator Area
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Company Management**: Add, edit, and delete companies with detailed information and a custom logo.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Employee Management**
 
-## Learning Laravel
+- **Invitation Management**: View all invitations and send new invitations to employees to join a company or cancel previously sent invitations.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Administrator Management**: Add new administrators to manage the application.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Employee Area
 
-## Laravel Sponsors
+- **Company Invitations**: Employees can accept or decline invitations to join a company.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Password Creation**: Employees can create their password after accepting an invitation.
 
-### Premium Partners
+- **View Information**: Employees can view company information, including the description and logo.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- **Information Update**: Employees can update their personal information, such as address, phone number, etc.
 
-## Contributing
+- **Logout**: Employees can log out of their space at any time.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Authentication**: Employees must authenticate with their email and password to access their space.
 
-## Code of Conduct
+## Installation
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. Clone the project from GitHub: `git clone https://github.com/hamzadayr/TerseaCRM.git`
+2. Navigate to the project directory:  `cd TerseaCRM`
+3. Copy the `.env.example` file as `.env` and configure it with your database information: `cp .env.example .env`
 
-## Security Vulnerabilities
+4. Generate a Laravel application key: `php artisan key:generate`
+5. Run migrations to create the database tables: `php artisan migrate`
+6. Run seeders to populate the database with initial data: `php artisan db:seed`
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+This will add companies, users, employees, invitations, and more to your database for a quick start.
 
-## License
+7. Serve the application using the artisan command: `php artisan serve`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Your application will be accessible at `http://localhost:8000`.
+
+Ensure that you update the `.env` file with your database information before running migrations and seeders.
+
+## Usage
+
+To access the CRM as an administrator, use the following credentials:
+
+- Email: hamzadayr@tersea.com
+- Password: tersea2024
+
+## Demo Video
+[Insert a link to your CRM demo video here.]
+
+## Author
+DAYR Hamza
+[Watch our CRM demo video here](https://www.canva.com/design/DAFyky-Q23Y/Sm55296U68hbKdfQxTWf-w/edit?utm_content=DAFyky-Q23Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
