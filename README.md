@@ -73,9 +73,6 @@ To access the CRM as an administrator, use the following credentials:
 - Email: hamzadayr@tersea.com
 - Password: tersea2024
 
-## Demo Video
-[Insert a link to your CRM demo video here.]
-
 
 ## Demo Video
 [Watch our CRM demo video here](https://www.canva.com/design/DAFyky-Q23Y/Sm55296U68hbKdfQxTWf-w/edit?utm_content=DAFyky-Q23Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
